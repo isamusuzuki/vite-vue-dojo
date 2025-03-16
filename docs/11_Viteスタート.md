@@ -1,8 +1,8 @@
 # Vite スタート
 
-作成日 2025/03/15
+作成日 2025/03/15、更新日 2025/03/16
 
-Node.js v22 の開発環境をDevContainerで起動する
+## `22-bookworm` の開発コンテナを起動する
 
 ```bash
 cat /etc/os-release
@@ -15,7 +15,7 @@ npm --version
 # 10.9.0
 ```
 
-npmコマンドを叩いて、質問にいくつか答える
+## npmコマンドを叩いて、質問にいくつか答える
 
 ```bash
 npm create vite@latest
@@ -33,10 +33,13 @@ npm create vite@latest
 # Done. Now run:
 ```
 
-起動する
+## アプリを起動する
 
 ```bash
 cd app
 npm install
+
+tsc --version
+
 npm run dev
 ```
