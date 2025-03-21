@@ -43,5 +43,3 @@ const decrement = () => {
         </div>
     </section>
 </template>
-
-

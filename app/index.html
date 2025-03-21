@@ -1,22 +1,220 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
-    <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css"/>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/versions/bulma-no-dark-mode.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite + Vue 道場</title>
-  </head>
-  <body>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-5 is-offset-1">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: blue;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title is-size-5">Vite + Vue 道場</p>
+                                    <p>Vite + Vue.js + TypeScript</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: dodgerblue;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="avocado.html" class="is-size-5">
+                                            Avocado
+                                        </a>
+                                    </p>
+                                    <p>単一ファイルコンポーネントを利用する</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: cornflowerblue;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="banana.html" class="is-size-5">
+                                            Banana
+                                        </a>
+                                    </p>
+                                    <p>複数のコンポーネントを組み込む</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: deepskyblue;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/coconut.html" class="is-size-5">
+                                            Coconut
+                                        </a>
+                                    </p>
+                                    <p>コンポーネント間で値を共有する（状態管理）</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: royalblue;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/daikon.html" class="is-size-5">
+                                            Daikon
+                                        </a>
+                                    </p>
+                                    <p>状態管理で「ローディング中」を実現する</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="column is-5">
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: darkorange;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/edamame.html" class="is-size-5">
+                                            Edamame
+                                        </a>
+                                    </p>
+                                    <p>refとreactiveを使いこなす</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: orange;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/fennel.html" class="is-size-5">
+                                            Fennel
+                                        </a>
+                                    </p>
+                                    <p>VueClipboard3を使いこなす</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: lightcoral;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/garlic.html" class="is-size-5">
+                                            Garlic
+                                        </a>
+                                    </p>
+                                    <p>emitを使って子から親に通知する</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: tomato;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/hakusai.html" class="is-size-5">
+                                            Hakusai
+                                        </a>
+                                    </p>
+                                    <p>Vue Routerを使ってページ遷移する</p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    <nav class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <svg viewBox="0 0 24 24" width="64" height="64" style="fill: red;">
+                                    <use href="#robot" />
+                                </svg>
+                            </div>
+                            <div class="level-item">
+                                <div>
+                                    <p class="title">
+                                        <a href="/ingen.html" class="is-size-5">
+                                            Ingen
+                                        </a>
+                                    </p>
+                                    <p>
+                                        Fileアップロードを実現する
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
     <svg style="display: none;">
-      <defs>
-          <symbol id="chevron-left-circle" viewBox="0 0 24 24">
-              <path d="M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M15.4,16.6L10.8,12L15.4,7.4L14,6L8,12L14,18L15.4,16.6Z"/>
-          </symbol>
-      </defs>
+        <defs>
+            <symbol id="robot" viewBox="0 0 24 24">
+                <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z" />
+            </symbol>
+        </defs>
     </svg>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+</body>
+
 </html>

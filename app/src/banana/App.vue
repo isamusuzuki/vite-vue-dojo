@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import InputKeyword from './InputKeyword.vue'
-import SimpleCounter from './SimpleCounter.vue'
+import Keyword from '../components/Keyword.vue'
+import SimpleCounter from '../components/SimpleCounter.vue'
 </script>
 
 <template>
@@ -23,9 +23,10 @@ import SimpleCounter from './SimpleCounter.vue'
         <div class="container">
             <div class="columns">
                 <div class="column is-4 is-offset-1">
-                    <input-keyword></input-keyword>
+                    <keyword></keyword>
                 </div>
             </div>
         </div>
     </section>
 </template>
+
