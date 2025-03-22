@@ -28,6 +28,11 @@ const { closeModal } = useStoreModal()
             <section class="modal-card-body">
                 <span v-text="modalBody"></span>
             </section>
+            <footer class="modal-card-foot">
+                <div class="buttons is-centered">
+                    <button class="button is-light" v-on:click="closeModal">Close</button>
+                </div>
+            </footer>
         </div>
     </div>
 </template>
