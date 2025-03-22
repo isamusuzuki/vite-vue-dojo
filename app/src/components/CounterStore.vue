@@ -1,14 +1,9 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useStoreCounter } from '../store/counter'
 
-const count = ref(0)
-
-const increment = () => {
-    count.value += 1
-}
-const decrement = () => {
-    count.value -= 1
-}
+const { count }  = storeToRefs(useStoreCounter())
+const { increment, decrement } = useStoreCounter()
 </script>
 
 <template>
@@ -17,12 +12,11 @@ const decrement = () => {
             <button class="level-item button is-light" @click="decrement">
                 -
             </button>
-            <span class="level-item is-size-3" v-text="count"></span>
+            <span class="level-item is-size-3" v-text="count" />
             <button class="level-item button is-light" @click="increment">
                 +
             </button>
         </div>
     </nav>
 </template>
-
 

@@ -1,6 +1,7 @@
 <script setup lang="ts">
-import KeywordSimple from '../components/KeywordSimple.vue'
-import CounterSimple from '../components/CounterSimple.vue'
+import KeywordInput from '../components/KeywordInput.vue'
+import KeywordOutput from '../components/KeywordOutput.vue'
+import CounterStore from '../components/CounterStore.vue'
 </script>
 
 <template>
@@ -12,10 +13,10 @@ import CounterSimple from '../components/CounterSimple.vue'
     <section class="section">
         <div class="container">
             <div class="columns">
-                <div class="column is-3 is-offset-1"><counter-simple></counter-simple></div>
+                <div class="column is-3 is-offset-1"><counter-store></counter-store></div>
             </div>
             <div class="columns">
-                <div class="column is-3 is-offset-1"><counter-simple></counter-simple></div>
+                <div class="column is-3 is-offset-1"><counter-store></counter-store></div>
             </div>
         </div>
     </section>
@@ -23,7 +24,8 @@ import CounterSimple from '../components/CounterSimple.vue'
         <div class="container">
             <div class="columns">
                 <div class="column is-4 is-offset-1">
-                    <keyword-simple></keyword-simple>
+                    <keyword-input></keyword-input>
+                    <keyword-output></keyword-output>
                 </div>
             </div>
         </div>

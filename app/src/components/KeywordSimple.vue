@@ -2,7 +2,6 @@
 import { computed, ref } from 'vue'
 
 const keyword = ref('')
-
 const reverse = computed(() => keyword.value.split('').reverse().join(''))
 </script>
 

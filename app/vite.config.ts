@@ -17,6 +17,10 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         avocado: resolve(__dirname, 'avocado.html'),
+        banana: resolve(__dirname, 'banana.html'),
+        coconut: resolve(__dirname, 'coconut.html'),
+        daikon: resolve(__dirname, 'daikon.html'),
+        edamame: resolve(__dirname, 'edamame.html'),
       },
     },
   },
