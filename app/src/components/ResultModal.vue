@@ -11,18 +11,18 @@ const { closeModal } = useStoreModal()
         <div class="modal-background"></div>
         <div class="modal-card">
             <header class="modal-card-head">
-                <p class="modal-card-title">
-                <nav class="level">
-                    <div class="level-left">
-                        <div class="level-item">
-                            <span v-html="modalIcon"></span>
-                        </div>
-                        <div class="level-item">
-                            <span v-text="modalTitle"></span>
+                <div class="modal-card-title">
+                    <div class="level">
+                        <div class="level-left">
+                            <div class="level-item">
+                                <span v-html="modalIcon"></span>
+                            </div>
+                            <div class="level-item">
+                                <span v-text="modalTitle"></span>
+                            </div>
                         </div>
                     </div>
-                </nav>
-                </p>
+                </div>
                 <button aria-label="close" class="delete" v-on:click="closeModal"></button>
             </header>
             <section class="modal-card-body">
