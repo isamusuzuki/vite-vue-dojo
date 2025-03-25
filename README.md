@@ -2,7 +2,7 @@
 
 Vite + Vue 道場
 
-作成日 2025/03/15、更新日 2025/03/16
+作成日 2025/03/15、更新日 2025/03/25
 
 ## 1. ファイル＆フォルダ構成
 
@@ -27,3 +27,5 @@ npm install
 npm run dev
 # ブラウザで `http://localhost:5173/`を開く
 ```
+
+<img src="screenshot.jpg" width="50%" alt="screenshot" />

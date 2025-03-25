@@ -66,7 +66,7 @@ export default defineConfig({
 })
 ```
 
-## 2a. HTMLファイルからTypeScriptファイルを読む
+## 3. HTMLファイルからTypeScriptファイルを読む
 
 avocado.htmlからsrc/avocado/main.tsを読む時は、以下のように記述する必要があった
 
