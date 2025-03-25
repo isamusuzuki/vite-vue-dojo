@@ -1,28 +1,15 @@
-<script lang="ts">
-import { defineComponent, ref } from 'vue'
+<script setup lang="ts">
+import { ref } from 'vue'
 import Copy2Parent from './Copy2Parent.vue'
 
-export default defineComponent({
-    components: {
-        Copy2Parent,
-    },
-    setup() {
-        const pasteOnly = ref('')
-
-        const addWord = (word: string) => {
-            if (pasteOnly.value === '') {
-                pasteOnly.value = word
-            } else {
-                pasteOnly.value = pasteOnly.value + '\n' + word
-            }
-        }
-
-        return {
-            pasteOnly,
-            addWord,
-        }
-    },
-})
+const pasteOnly = ref('')
+const addWord = (word: string) => {
+    if (pasteOnly.value === '') {
+        pasteOnly.value = word
+    } else {
+        pasteOnly.value = pasteOnly.value + '\n' + word
+    }
+}
 </script>
 
 <template>

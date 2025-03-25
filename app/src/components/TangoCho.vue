@@ -1,14 +1,41 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-import useTangoCho from '../logic/useTangoCho'
+<script setup lang="ts">
+import { computed, reactive, ref } from 'vue'
 
-export default defineComponent({
-    setup() {
-        return {
-            ...useTangoCho()
-        }
-    }
+interface IWord {
+    japanese: string
+    english: string
+}
+
+interface State {
+    words: Array<IWord>
+}
+
+const state = reactive<State>({
+    words: [
+        {
+            japanese: 'コアラ',
+            english: 'Koala',
+        },
+        {
+            japanese: 'ラッコ',
+            english: 'Sea Otter',
+        },
+    ],
 })
+const newJapanese = ref('')
+const newEnglish = ref('')
+const buttonDisabled = computed(
+    () => newJapanese.value === '' || newEnglish.value === ''
+)
+const addNewWord = () => {
+    state.words.push({
+        japanese: newJapanese.value,
+        english: newEnglish.value
+    })
+    newJapanese.value = ''
+    newEnglish.value = ''
+}
+const words = computed(() => state.words)
 </script>
 
 <template>

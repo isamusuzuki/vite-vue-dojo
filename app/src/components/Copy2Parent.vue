@@ -1,23 +1,11 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    props: {
-        target: {
-            type: String,
-            required: true,
-        },
-    },
-    setup(props, context) {
-        const copyWord = () => {
-            context.emit('childEvent', props.target)
-        }
-
-        return {
-            copyWord,
-        }
-    },
+<script setup lang="ts">
+const props = defineProps({
+    target: { type: String, required: true }
 })
+const emit = defineEmits(['childEvent'])
+const copyWord = () => {
+    emit('childEvent', props.target)
+}
 </script>
 
 <template>
