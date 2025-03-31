@@ -2,7 +2,7 @@
 import { storeToRefs } from 'pinia'
 import { useStoreCounter } from '../store/counter'
 
-const { count }  = storeToRefs(useStoreCounter())
+const { count } = storeToRefs(useStoreCounter())
 const { increment, decrement } = useStoreCounter()
 </script>
 
@@ -19,4 +19,3 @@ const { increment, decrement } = useStoreCounter()
         </div>
     </nav>
 </template>
-

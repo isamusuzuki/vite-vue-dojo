@@ -12,6 +12,6 @@ const reverse = computed(() => keyword.value.split('').reverse().join(''))
             <input class="input" type="text" placeholder="何か入力してください" v-model="keyword" />
         </div>
     </div>
-    <h1 class="title block">{{  keyword }}</h1>
-    <h2 class="subtitle block">{{  reverse }}</h2>
+    <h1 class="title block">{{ keyword }}</h1>
+    <h2 class="subtitle block">{{ reverse }}</h2>
 </template>

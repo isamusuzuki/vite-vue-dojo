@@ -29,4 +29,3 @@ import CounterSimple from '../components/CounterSimple.vue'
         </div>
     </section>
 </template>
-

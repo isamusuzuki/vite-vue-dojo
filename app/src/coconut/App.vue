@@ -31,4 +31,3 @@ import CounterStore from '../components/CounterStore.vue'
         </div>
     </section>
 </template>
-

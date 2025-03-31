@@ -13,4 +13,3 @@ const { keyword } = storeToRefs(useStoreKeyword())
         </div>
     </div>
 </template>
-

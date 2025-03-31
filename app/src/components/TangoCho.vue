@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { computed, reactive, ref } from 'vue'
 
-interface IWord {
+type IWord {
     japanese: string
     english: string
 }
 
-interface State {
+type State {
     words: Array<IWord>
 }
 

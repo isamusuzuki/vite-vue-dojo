@@ -1,6 +1,6 @@
 import express from 'express'
 import multer from 'multer'
-import path, {dirname, resolve} from 'path'
+import path, { dirname, resolve } from 'path'
 import { fileURLToPath } from 'url'
 
 const app = express()
@@ -19,8 +19,8 @@ const upload = multer({ storage })
 
 app.use(express.static(path.join(__dirname, 'dist')))
 
-app.post('/api/ingen/upload', upload.single('uploadFile'), (req, res) =>{
-    res.json({success: true, message: `${req.file.originalname}のアップロードが完了しました`})
+app.post('/api/ingen/upload', upload.single('uploadFile'), (req, res) => {
+    res.json({ success: true, message: `${req.file.originalname}のアップロードが完了しました` })
 })
 
 app.get('/', (req, res) => {

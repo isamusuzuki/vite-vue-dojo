@@ -23,4 +23,3 @@ const fake = () => {
         <button class="button is-primary is-large" @click="fake">クリック</button>
     </div>
 </template>
-

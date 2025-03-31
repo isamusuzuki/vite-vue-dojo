@@ -23,17 +23,11 @@ const decrement = () => {
                 <div class="column is-3 is-offset-1">
                     <nav class="level">
                         <div class="level-left">
-                            <button
-                                class="level-item button is-light"
-                                @click="decrement"
-                            >
+                            <button class="level-item button is-light" @click="decrement">
                                 -
                             </button>
                             <span class="level-item is-size-3" v-text="count"></span>
-                            <button
-                                class="level-item button is-light"
-                                @click="increment"
-                            >
+                            <button class="level-item button is-light" @click="increment">
                                 +
                             </button>
                         </div>

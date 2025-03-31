@@ -17,9 +17,19 @@
 	// Configure tool-specific properties.
 	"customizations": {
 		"vscode": {
-			"settings": {},
+			"settings": {
+				"eslint.enable": true,
+				"eslint.validate": [
+					"javascript",
+					"javascriptreact",
+					"typescript",
+					"typescriptreact",
+					"vue"
+				]
+			},
 			"extensions": [
-				"vue.volar"
+				"vue.volar",
+				"dbaeumer.vscode-eslint"
 			]
 		}
 	}
