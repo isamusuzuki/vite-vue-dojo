@@ -1,6 +1,6 @@
 import { defineStore } from 'pinia'
 
-interface State {
+type State = {
     modalIcon: string
     modalTitle: string
     modalBody: string
