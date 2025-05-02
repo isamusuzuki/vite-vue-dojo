@@ -16,7 +16,7 @@ Vite + Vue 道場
 
 [Dev Container Templates](https://github.com/devcontainers/templates) > [Node.js & JavaScript](https://github.com/devcontainers/templates/tree/main/src/javascript-node) > 22-bookworm を選択
 
-VSCode > コマンドプロンプト > Dev Containers: "Add Dev Container Configuration Files ..." の選択肢にある
+VSCode > コマンドパレット > Dev Containers: "Add Dev Container Configuration Files ..." の選択肢にある
 
 ## 3. アプリの開始
 
